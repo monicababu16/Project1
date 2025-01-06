@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini1</title>
+  <link rel="stylesheet" href="31task.css"> 
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Logo</div>
+    <nav class="nav">
+      <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+      <ul class="nav-list">
+        <li><a href="31task.html" class="active">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <div class="login-card">
+      <div class="login-header">
+        <div class="user-icon"></div> 
+        <h1 style="color: white;">Member Login</h1>
+      </div>
+
+      <form class="login-form">
+        <label for="username">Username *</label>
+        <input type="text" id="username" placeholder="Enter your Username" required>
+        <label for="password">Password *</label>
+        <input type="password" id="password" placeholder="Enter your Password" required>
+        <div class="Remember-me">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember">Remember Me</label>
+      </div>
+        <button type="submit" class="login-button">LOGIN</button>
+      </form>
+      <div class="login-footer">
+        <a href="#" class="link">Don't have an account?</a>
+        <a href="#" class="link">Forgot password?</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Sample text. Click to select the text box.</p>
+    <a href="31task.html">Website Templates</a> created with <a href="31task.html">Website Builder Software</a>.
+  </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
